@@ -1,0 +1,25 @@
+$white: #fff
+$gray: #EDEDED
+$blue: #096FFA
+$green: #6D787A
+  
+@import header.sass
+@import footer.sass
+@import news.sass
+
+.container
+  margin: 0 20px
+
+.loading
+  display: flex
+  margin: 20px auto
+  justify-content: center
+  align-items: center
+  animation: rotation 1s infinite linear
+
+  @keyframes rotation
+    0%
+      transform: rotate(0deg)
+    100%
+      transform: rotate(360deg)
+

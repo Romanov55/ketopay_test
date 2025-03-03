@@ -1,0 +1,59 @@
+header
+  position: relative
+  display: flex
+  height: 72px
+  justify-content: center
+  align-items: center
+  border-bottom: 1px solid $gray
+
+  .burger__button
+    padding: 29px 20px
+    position: absolute
+    left: 0
+    top: 0
+
+    .burger__image
+      width: 20px
+      height: auto
+
+  .title
+    font-size: 24px
+    line-height: 28.8px
+    letter-spacing: 1.1px
+
+.menu
+  position: fixed
+  top: 0
+  left: -100%
+  transition: .5s
+  width: 100%
+  background-color: $white
+  height: 100vh
+  display: flex
+  align-items: center
+
+  &.active
+    left: 0
+
+  .close__menu
+    padding: 20px
+    position: absolute
+    top: 0
+    right: 0
+
+    .close__image
+      width: 20px
+      height: 20px
+
+  .menu__list
+    display: flex
+    flex-direction: column
+    margin: 0 20px
+    gap: 28px
+
+    .menu__link
+      font-size: 22px
+      font-weight: 700
+
+      &:active
+        opacity: .5
